@@ -1,0 +1,72 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:400);
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,100);
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #eee;
+  font-family: Roboto, "Helvetica Neue", Helvetica, sans-serif;
+  overflow-x: hidden;
+}
+
+nav {
+  position: fixed;
+  height: 100vh;
+  width: 4rem;
+  background: #555;
+  overflow: hidden;
+  transition: width 0.3s ease;
+  z-index: 10;
+}
+nav:hover, nav.pinned {
+  width: 10rem;
+}
+nav #logo {
+  background: #3b4a6b;
+  height: 4rem;
+  line-height: 4rem;
+  padding-left: 0.7rem;
+  color: white;
+  font-weight: bold;
+}
+nav a {
+  color: #EEE;
+  text-decoration: none;
+  display: table;
+  width: 10rem;
+}
+nav a.active .fa {
+  border-left: 3px solid white;
+  border-right: 3px solid transparent;
+}
+nav a:hover {
+  background: #444;
+  color: #BEE0ff;
+}
+nav a .fa {
+  width: 4rem;
+  display: table-cell;
+  font-size: 2rem;
+  padding: 1rem 0;
+  text-align: center;
+}
+nav a.label {
+  display: table-cell;
+}
+
+section {
+  padding: 2rem 5rem 2rem 9rem;
+  min-height: 100vh;
+}
+section h1 {
+  font-family: Raleway, Roboto, sans-serif;
+  font-size: 2.2rem;
+}
+.container{
+  position: relative;
+  left: 3vw;
+}
+/*# sourceMappingURL=adminPage.css.map */
